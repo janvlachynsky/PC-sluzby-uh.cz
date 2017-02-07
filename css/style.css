@@ -1,0 +1,947 @@
+@import 'fixed.css';
+h1{
+	
+	font-size: 2.5em;
+	font-family: myfont;
+	color:#2F2229;
+}
+h2{
+	color: #353432;
+	font-size:3.5em;
+	text-shadow: 0 0 10px #ccc;
+	margin:0.3em;
+	text-align: center;
+}
+h3{
+	font-size:2.5em;
+	color: black;
+	text-shadow: 0 0 1px grey;
+	text-align:center;
+}
+h4{
+	margin: 10px 5px 0px 10px;
+	text-align: center;
+	color: #444;
+	font-size:2em;
+}
+.sluzby h4{
+	text-align: left;
+	border-left: 5px solid;
+	padding-left: 10px;
+}
+p{
+	
+	font-size:1.5em;
+}
+a{
+
+}
+a:hover{
+	color:#033649;
+	text-decoration: underline;
+	transition: 0.9s;
+}
+.web {
+	width:100%;
+	margin:0px auto;
+}
+.web p{
+	padding: 5px 20px 5px 20px;
+	font-size:1em;
+	text-align: center;
+}
+.web section{
+	box-sizing: border-box;
+	max-width: 1440px;
+	width: 100%;
+	padding: 0px 50px;
+	margin: 0 auto;
+}
+.web section article{
+	width:300px;
+	float:left;
+	margin:5px 5px 20px 5px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	min-height: 200px;
+}
+.web #responsive{ /*img*/
+		box-sizing: border-box;
+		max-width: 1440px;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 10px 100px;
+	}
+.zaobleni{
+	  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px; 
+}
+
+header a, p a{
+
+	text-decoration: none !important;
+	color:#4DA3BA;
+}
+hr{
+	height: 1px;
+	display: block;
+    border: 0;
+    border-top: 1px solid #ccc;
+	margin: 0 auto;
+    padding-bottom: 8px;
+}
+hr.wide{
+	width:85%;
+}
+hr.cistic{
+	clear: both;
+	height: 1px;
+	border: none;
+	margin: -1em 0 0 0;
+	visibility: hidden;
+
+}
+.form{
+	margin: 0px auto;
+}
+body{
+	position: relative;top: 0px;left: 0px;
+	font-family: myfont;
+	background-image: url("../graphics/sayagata.png");
+	background-attachment: fixed;
+	width:100%;height: 100%;
+	padding:0;
+	margin:0;
+	overflow-x: hidden; /*skrytí spodního baru*/
+}
+@font-face{
+	font-family: myfont;
+	src: url("../font/X360.ttf");
+}
+.obsah{
+	position:relative;top:2em;
+	width:85%;
+	margin: 0px auto;
+	background-color:rgba(255,255,255,0.3);
+	text-align: left;
+	padding: 0.5em;
+	max-width: 1440px; 
+	min-width:265px;
+}
+footer{
+	font-size:15px;
+	clear: both;
+	background-color:#484246;   /*#767676*/
+	color: #ccc;
+	position: relative;top: 2em;bottom: 0px;
+	width: 100%;
+	margin: 0px auto;
+	padding:2px;
+	text-align: center;
+	line-height:2.5em;
+}
+footer a:hover{
+	color:white;
+	border-bottom-color: white;
+	transition: 0.9s;
+}
+footer ul{
+	margin: 8px;
+	padding:0px;
+	text-align: center;
+	z-index: 2;
+}
+footer ul li{
+	list-style-type: none;
+	display: inline;
+	margin-bottom: 10px;
+}
+footer a{
+	text-decoration: none;
+	color:#929292;
+	padding:5px;
+	font-size: 1.5em;
+}
+#space-uparrow{
+	float:right;
+	position:relative;bottom:-15px;right: 5%;
+    padding: 0 ; 
+    display: none;
+}
+.uparrow{
+	display:inline-block;
+	float:right;
+	position:relative;bottom:-15px;right: 5%;
+    padding: 0 ; 
+    transition: s;
+    z-index: 1;
+}
+.uparrow-active{
+	position: fixed;bottom:10px;right: 5% !important;
+	transition: 0.5s;
+	z-index: 1;
+}
+.toggle-nav{
+	display:none;
+}
+.highlight1{
+	color:#125D96;
+	font-weight: bold;
+}
+.highlightB{
+	font-weight: bold;	
+}
+.top{
+	width:100%;
+	height: 2.9em;
+	background-color:#3B6981;
+	position: relative;top:0em;left:0px;
+	padding: 0em;
+	color: white;
+	text-shadow:  1px 1px 2px rgba(0,0,0,.8); 
+	margin:0px;
+}
+#top-wide{
+	position: relative;
+	top: 0.7em; left: 1em;
+}
+div.top-small{
+	text-align: center;
+}
+.top-small a{
+	color:white	;
+	padding: 2px 10px;
+	font-size:2em;
+	position: relative;
+	right: 10px;
+	top:4px;
+	margin:0 5px;
+	border: 1px solid white;
+	 -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; 
+	border-radius: 4px;
+}		
+.top-small{
+	display:none;
+}
+.logo a{
+	color:black;
+}
+nav a{
+	font-size:1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+nav ul li {
+	display: inline-block;
+	list-style-type:none;
+}
+/*@media screen and (min-width: 1080px) {	*/
+.menuitem:hover{
+
+	padding-bottom:1.2em;
+	border-bottom: 5px solid #125D96;
+	color:#125D96;
+	transition: 0.25s;
+	margin:0px;
+}
+.aktivni{
+	padding-bottom:1.2em;
+	border-bottom: 5px solid #125D96;
+	color:#125D96;
+}
+img.slideshow{
+	box-sizing: border-box;
+	width:100%;
+	max-width: 1440px;
+	height: auto;
+	margin: 0px auto;
+	padding: 0px 100px 20px 100px;
+	
+}
+.onas-text{
+	padding: 20px;
+	max-width: 50%;
+}
+/*.onas-psr{
+
+	width:850px;
+	margin:0px auto;
+	list-style-type: none;
+}*/
+
+.onas-psr li{
+	box-sizing: border-box;  
+		
+	width: 33%;  
+	display: inline-block;
+	     
+	margin-left: -10px;
+	margin: 0 auto; 
+	/*margin: 2em;
+	display: inline-block;
+	margin:0px 2em;
+	font-size: 1.5em;
+	
+
+    background: white; /* For browsers that do not support gradients */
+  /*	background: -webkit-radial-gradient(red 2%, white 98%); /* Safari 5.1 to 6.0 */
+  	/*background: -o-radial-gradient(red 2%, white 98%); /* For Opera 11.6 to 12.0 */
+  	/*background: -moz-radial-gradient(red 2%, white 98%); /* For Firefox 3.6 to 15 */
+  	/*background: radial-gradient(azure 1%; #125D96  ); /* Standard syntax */
+}
+
+
+#onas-pc{
+	box-sizing:border-box;
+	float:right; 
+	margin: 3em 1em; 
+	width:50%;
+	max-width: 1440px; 
+	height: auto;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
+	}
+.onas-phone{
+	color:#125D96;
+}
+.onas-phone a{ 			/*Zbytek - .package:nth-of-type*/
+	text-align: center;
+	color:#125D96;
+	padding: 3px 20px;
+	border-bottom: 3px solid;
+	font-weight: 900;
+	font-size:1.5em;
+	text-decoration: none;
+	position:relative;bottom: 0.6em;
+}
+.fa-ul{
+	margin: 1em 1em 0em 5em;
+}
+.fa-ul li {
+	font-size: 1.25em;
+	margin:2em 0px 0px 0px;
+}
+.fa-li{
+	color:#033649;
+	top:-5px;	
+}
+.form{
+	width:690px;
+	margin:0 auto;
+}
+.servis .fa-li{
+	top:-15px;
+}
+.servis ul{
+	margin: 1em 2em 1em 8em;
+}
+ul.druhy li{
+	margin:1em 0em 0em 0em;
+}
+.servis img {
+	box-sizing: border-box;
+	float:right;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+	width:50%;
+	max-width: 1440px;
+	height: auto;
+	margin: 1em;
+	padding: 0px ;
+	box-shadow: 3px 2px 20px black;
+}
+
+.sluzby p{
+	font-size:1.2em;
+}
+.sluzby ul{
+	margin:2em 3em;
+}
+.sluzby .fa-li{
+	top:3px;
+}
+.sluzby div.package{
+	background: -webkit-gradient(linear, 0% 0%, 0% 60%, from(#EEE), to(#FFF)); 
+	background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE); 
+	padding: 10px;
+	margin-top: 2em;
+	border: 5px outset #4DA3BA;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px; 
+	box-shadow:				/*Vícenásobný stín*/
+    0 0 0 5px hsl(0, 0%, 70%),
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%);
+
+}
+.package:nth-of-type(1) h4{ /*first-child typu h4 v třídě package*/
+	color:#033649;
+   }
+.package:nth-of-type(2) h4{ 
+	color:#2E6706;
+   }
+.package:nth-of-type(3) h4{ 
+	color:#A11300;
+   }
+.package:nth-of-type(2){ 
+	border-color:#67F800 !important;
+   }
+.package:nth-of-type(3){ 
+	border-color:#FF371C !important;
+   }
+.package:nth-of-type(2) a,	/*Zabarvení volacího tlačítka*/
+.package:nth-of-type(2) i{
+	color:#2E6706;
+}
+.package:nth-of-type(3) a,
+.package:nth-of-type(3) i{
+	color:#A11300;
+}
+.sluzby img{
+	box-sizing: border-box;
+	float:right;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+	width:30%;
+	max-width: 1440px;
+	height: auto;
+	margin: 1em;
+	padding: 0px ;
+}
+.info{
+	box-sizing: border-box;
+	max-width: 1440px;
+	width: 100%; 
+	margin: 0 auto;
+	min-width: 500px;
+}
+.kontakt ul{
+	list-style-type: none; 
+	font-size: 1.3em;
+}
+.kontakt.odkazy p{
+	float: right;
+
+}
+.fb-page{
+	float: left;
+	margin: 5em 3em;
+}
+.google-map {
+   	width: 90%;
+   	height: 300px;
+   	border: none;
+   	margin: 0px auto;    	
+   }
+			/* fixes potential theme css conflict */
+.google-map img {
+   	max-width: inherit !important;
+}
+.mailsent {
+	display:none;
+	width:60%;
+	background-color: green;
+	text-align: center;
+	margin: 0px auto;
+	padding: 1px;
+}
+.mailsent-a{
+	display:block;
+}
+form { 
+    float:right;
+    border: 1px solid #ddd; 
+    padding: 15px 10px 10px 10px; 
+    margin: 5px 20px 20px 20px;
+    width: 620px;
+    background: #fff;
+    /* -- CSS3 - define rounded corners -- */	
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px; 
+    border-radius: 10px; 
+	/* -- CSS3 - create a background gradient -- */
+	background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFF)); 
+	background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE); 
+	/* -- CSS3 - add a drop shadow -- */
+    -webkit-box-shadow:0px 0 50px #ccc;
+    -moz-box-shadow:0px 0 50px #ccc; 
+    box-shadow:0px 0 50px #ccc;
+}
+label {	
+    font-size: 20px;
+    color: #666; 
+}
+input, textarea { 		
+    padding: 8px; 
+    margin: 4px 0 20px 0; 
+    background: #fff; 
+    width: 220px; 
+    font-size: 14px; 
+    color: #555; 
+    border: 1px #ddd solid;
+    -webkit-box-shadow: 0px 0px 4px #aaa;
+    -moz-box-shadow: 0px 0px 4px #aaa; 
+	box-shadow: 0px 0px 4px #aaa;
+	/* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */		
+    -webkit-transition: background 0.3s linear;
+}
+input:hover, textarea:hover { 
+    background: #eee; 
+}
+input.submit { 	
+    width: 150px; 
+    color: #eee; 
+    text-transform: uppercase; 
+    margin-top: 10px;
+    background-color: #18a5cc;
+    border: none;
+    /* -- CSS3 Transition - define which property to animate (i.e. the shadow)  -- */
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+	/* -- CSS3 Shadow - create a shadow around each input element -- */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8)); 
+	background:  -moz-linear-gradient(25% 75% 90deg,#0a85a8, #18a5cc);  
+	/* -- CSS3 - Rounded Corners -- */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+input.submit:hover { 		
+    -webkit-box-shadow: 0px 0px 20px #555;
+    -moz-box-shadow: 0px 0px 20px #aaa; 
+    box-shadow: 0px 0px 20px #555;		
+    cursor:  pointer; 
+}
+form h2{
+	color:#666;
+}
+fieldset { 
+	border: none; 
+} 
+#user-details { 
+    float: left;
+    width: 230px; 
+}
+#user-message { 
+    float: left;
+    width: 320px;
+}
+textarea {		
+    width: 300px; 
+    height: 175px; 		 		
+}
+.map-responsive{
+}
+iframe{
+		float:left;
+		margin-bottom:10px;
+
+}
+											
+															/*http://jecas.cz/responsivni-menu*/
+@media screen and (min-width: 1080px){
+
+	nav ul{
+		position:relative;top:1.4em;left:0%;
+		font-size: 1.5em;
+		text-align: left;
+		height: 6em;
+		width:100%;
+		padding:0;
+		margin:0px;
+		transition: 0.5s;
+		padding:0;
+		margin:0;
+	}
+	.fix-navul{
+		position:relative;top:0.5em;left:25%;
+		font-size: 1.2em;
+		text-align: left;
+		height: 3em;
+		width:75%;
+		padding:0;
+		margin:0px;
+		transition: 0.5s;
+		list-style-type: none;
+	}
+	.menu{
+		position:relative;top:0em;left:0px;
+		height: 6em;
+		background-color:white;
+		width:100%;
+		padding:0;
+		margin:0;
+		box-shadow: 0 2px 10px -0.2px black;
+		margin:0px;
+		transition: 0.5s;
+	}
+	.logo{
+		position:relative;top:0.18em;left:0;
+		z-index: 1;
+		float:left;
+		padding:0.5em;
+		margin:0px;
+		transition: 0.5s;
+		font-size:2.5em;
+		
+		text-shadow: 1px 0px 4px black;
+	}
+	.fix-logo{
+		position:relative;top:0em;left:0;
+		z-index: 1;
+		float:left;
+		padding:0.25em;
+		margin:0px;
+		transition: 0.5s;
+		font-size:1.5em;
+		
+		text-shadow: 1px 0px 2px black;
+	}
+}
+@media screen and (max-width:1080px) and (min-width: 860px){
+
+	
+	
+	nav ul{
+		position:relative;top:1.4em;left:0%;
+		font-size: 1.5em;
+		text-align: left;
+		height: 6em;
+		width:100%;
+		padding:0;
+		margin:0px;
+		transition: 0.5s;
+
+	}
+	.fix-navul{
+		position:relative;top:0.5em;left:5%;
+		font-size: 1.2em;
+		text-align: left;
+		height: 3em;
+		width:95%;
+		padding:0;
+		margin:0px;
+		transition: 0.5s;
+		list-style-type: none;
+	}
+	.menu{
+		position:relative;top:0em;left:0px;
+		height: 6em;
+		background-color:white;
+		width:100%;
+		padding:0;
+		margin:0;
+		box-shadow: 0 2px 10px -0.2px black;
+		transition: 0.5s;
+	}
+	.logo{
+		position:relative;top:1.3em;left:0;
+		z-index: 1;
+		float:left;
+		padding:0.5em;
+		margin:0px;
+		transition: 0.5s;
+		font-size:1.25em;
+
+		text-shadow: 1px 0px 1px black;
+}
+	.fix-logo{
+		position:relative;top:0em;left:0;
+		z-index: 1;
+		float:left;
+		padding:0.25em;
+		margin:0px;
+		transition: 0.5s;
+		font-size:1.5em;
+		
+		text-shadow: 1px 0px 2px black;
+	}
+
+}
+
+
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; } /*http://programujte.com/clanek/2009090500-jquery-plugin-validation-plugin-pro-snadnou-kontrolu-formularu/        http://www.itnetwork.cz/php/zaklady/zaklady-php-kontaktni-emailovy-formular/*/
+	
+@media screen and (max-width:860px)  { /*změnu max-width provést i v JS!!!*/
+	.fb-page{
+		float:none;
+		margin: 3em;
+	}
+	article.onas, article.servis, article.web, article.sluzby, article.kontakt{
+		box-sizing: border-box;
+		margin: 0.5em;
+
+	}
+	.obsah{
+		padding:0em;
+		margin: 0em;
+		width: 100%;
+	}
+	img.slideshow{
+		max-width: 860px;
+		padding: 10px 0px;
+	}
+		
+	.web section{
+		box-sizing: border-box;
+		max-width: 860px;
+		width: 100%;
+		padding: 10px 50px 10px 30px;
+	}
+	.web section article{
+		box-sizing: border-box;
+		width:inherit;
+		float:none;
+		position: relative;
+		text-align: center;
+		margin:5px 5px 20px 5px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		min-height: 200px;
+	}
+	.web section{
+		text-align: center;
+	}
+	h2{
+		font-size:2.75em;
+	}
+	p{
+		font-size: 1.2em;
+	}
+	input { 		
+  		width: 220px; 
+   	    -webkit-transition: background 0.3s linear;
+	}
+	textarea{
+		width: 250px; 
+   	    -webkit-transition: background 0.3s linear;
+	}
+	.form{
+		width:350px;
+	}
+	form{
+		position: relative;left:1em;
+		width:300px;
+	}
+	#user-details { 
+    	float: none;
+    	width: 200px; 
+	}	
+	#user-message { 
+    	float: none;
+    	width: 200px;
+	}	
+	.aktivni, .menuitem:hover{
+		text-decoration: none;
+		border:none;
+		padding-bottom:0em ;
+		padding: 12px;
+		color:white;
+	}
+
+	nav ul a{				/*jednotlivé položky roklikávacího menu*/
+		color:grey;
+		padding-left: 0em;
+		padding-right: 0em;	
+		display:block;
+		font-size: 1.5em;
+		padding: 12px 12px 12px 20px;
+
+		text-shadow: 0 0 10px black;
+	}
+	nav ul li {
+		display: block;	
+	}
+	nav ul li:nth-child(even){
+		background-color:#3f3f3f;
+
+	}
+	.menu ul:after { /*zobacek*/
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        right:12px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+
+	.menu{
+		position:relative;top:0em;left:0px;
+		height: 67px;
+		background-color:white;
+		width:100%;
+		padding:0;
+		margin:0;
+		box-shadow: 0 2px 10px -0.2px black;
+		transition: 0.5s;
+		
+		position:relative;top:0px;
+		display:inline-block;
+	}
+
+	.menu ul.active, .fix-menu ul.active, #top-wide{
+		display:none;
+	}
+	.top-small{display: inline-block;}
+	.top{
+		text-align: right;
+
+	}
+
+		
+	nav ul{ /*rozkliklé menu*/
+		width: 75%;
+		position: absolute;top:100%;right:5px;
+		padding:0px 0px 0px 0px;
+        background:#303030;
+        border-radius:3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px; 
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        z-index: 1;
+	}
+	.toggle-nav { /*menu button*/
+        padding:10px;
+        float:right;
+        display:inline-block;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px; 
+        background:white;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:grey;
+        font-size:35px;
+        transition:color linear 0.15s;
+    }
+    .toggle-nav:hover, .toggle-nav.active { /*znak 3 č*/
+        text-decoration:none;
+        color:#3B6981;
+    }
+    .logo{
+		position:relative;top:0.2em;left:0;
+		z-index: 1;
+		float:left;
+		padding:0.5em;
+		margin:0px;
+		transition: 0.5s;
+		font-size:2em;
+
+		text-shadow: 1px 0px 1px black;
+	}
+
+}					
+@media screen and (max-width:425px) {
+	.fb-page{
+		float: none;
+		margin: 0;
+		width: 300px;
+	}
+	.servis img, .sluzby img{
+		display: none;
+	}
+	.fa-li{
+		top:0px;	
+	}
+	#onas-pc, .onas-psr{
+		display:none;
+	}
+	.onas-text{
+		max-width: 100%;
+	}
+	img.slideshow{
+		width:100%;
+		max-width: 425px;
+		padding: 0px 0px 20px 0px;
+	}
+	.top-small{display: inline-block;}
+	#popis{
+		width: 120%;
+		position: relative;
+		margin:0px auto;
+		width:300px;
+	
+}
+	.web section article{
+		box-sizing: border-box;
+		position: relative;
+		margin:0px auto;
+		width:300px;
+		float:none;
+		text-align: center;
+		margin:10px 0px;
+		padding: 5px;
+		border: 1px solid #ccc;
+		
+		min-height: 200px;
+	}
+
+	.menu{
+		min-width:265px;
+	}
+	h2{
+		font-size:2em;
+	}
+	p{
+		font-size:1.25em;
+	}
+	input{
+		width: 150px; 
+        -webkit-transition: background 0.3s linear;
+	}
+
+	textarea { 		
+  		width: 200px; 
+        -webkit-transition: background 0.3s linear;
+	}
+	.form{
+		width:280px;
+	} 
+	form{
+		width:250px;
+	}
+	#user-details { 
+    	float: none;
+    	width: 150px; 
+	}	
+	#user-message { 
+    	float: none;
+    	width: 200px;
+	}	
+	nav ul{ /*rozkliklé menu*/
+		width: 95% !important;
+
+	}
+	footer ul{
+		z-index: 1;
+	}
+	.logo{
+		position:relative;top:0.2em;
+		z-index: 1;
+		padding:0.5em 0.2em;
+		margin: 0px;
+		transition: 0.5s;
+		font-size:1.5em;
+
+		text-shadow: 1px 0px 1px black;
+	}
+	.toggle-nav { /*menu button*/
+       
+    }
+	footer a{
+		font-size:1.5em;
+
+	}
+	
+}
